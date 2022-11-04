@@ -1,0 +1,107 @@
+@media screen and (max-width: 1100px) {
+.practice-box .number span { font-size: 70px; right: -6px; top: -14px;  }
+}	
+@media screen and (max-width: 1080px) {
+menu li { margin-left: 50px;  }
+	}
+@media screen and (max-width: 1023px) {
+.practice-box .number { padding-top: 14px; font-size: 23px; background-size: 75%; }
+menu li { margin-left: 50px;  }
+.practice-box .number span { font-size: 66px; right: 0;  }
+.practice-box .two img { left: 29px; width: 100px;  }
+.practice-box h3 {     margin: 30px 0; }
+}  
+@media screen and (max-width: 979px) {
+.tc-popup .tc-popup-in { padding: 30px; margin-left: 0px; width: 96%; left: 2%  }	
+.practice-box .number { font-size: 19px;  }	
+p { line-height: 22px;  }	
+body { font-size: 17px; padding-top: 85px;  }	
+menu li a { font-size:15px;  } 
+menu li { margin-left: 25px;  }
+header { height: 85px;  }
+header img { width: 100px;  }
+h2 { margin-bottom: 25px; font-size: 35px;  }
+.about-box .prizes { padding: 0 0 10px 0px; font-size: 20px;  }
+.about-box .right:before { left: -75px;  }
+.about-box .prizes span.black { font-size: 16px;  }
+.about-box .left { padding-top: 5px;  }
+.practice-box .number span { top: -9px; font-size: 55px;  }
+.practice-box h3 { font-size: 15px;  }
+.practice-box .three img { bottom: 20px; width: 200px;  }
+.winner-box td, .winner-box th { font-size: 14px;  }
+.winner-box .winner-table { padding: 75px 20px;  }
+.winner-box .tabs li:first-child { padding-left: 20px;  }
+.scrollable .scroll-bar.vertical { right: 0!important;  }
+.img1{
+    height:auto;width:auto;margin:0px auto !important
+}
+}  
+@media screen and (max-width: 767px) {
+.mobile { display: block;  }
+.dekstop { display: none;  }
+.cycle-img, .voucher-img { display: none;  }	
+.winner-box .winner-table { padding:20px;  }
+body { padding-top: 70px;  }	
+header img { width: 90px!important;  } 
+header { padding-top: 12px!important; height: 70px!important;  }	
+.common-pad { padding: 65px 0; padding-bottom: 0px; }	
+footer { margin-top: 0px;  }
+.tvc-box a { width: 445px; height: 250px;  }
+.practice-box, .terms-box { padding-bottom: 0px;  }
+.practice-box .number span { font-size: 45px; top: -12px; right: -40px;  }	
+.practice-box .number {background: none;  padding: 5px 10px; margin-right: 35px;  }	
+.practice-box h3 br{ display: none;  }	
+.about-box .left .image { left: 0; top: 0; position: relative;  }
+menu { overflow: hidden; padding-top: 20px; width: 0; position: fixed; right: 0; background: #ccc; height: 100%; top: 0; margin-top: 0px!important;  }
+menu  li { padding: 10px 15px; margin: 0px; width: 100%;  border-bottom: 1px solid #0958a4; }
+menu.open-menu { width: 250px;  }
+.hamburger-icon, .hamburger-close { display: block;  }
+.about-box .left { padding-left: 0px;  }
+.about-box .right .image {  left: 0; top: 0; position: relative; }
+.about-box .prizes { text-align: center;  }
+.about-box .right:before { left: -14%; }
+h2 { font-size: 28px;  }
+p br { display: none;  }
+.practice-box .three img { width: 155px;  } 
+.practice-box h3 { font-size: 14px;  }
+.practice-box .two img { width: 75px; left: 35px;  }
+.tc-popup h4 { font-size: 16px;  }
+.tc-popup h2 { font-size: 16px;  }
+.tc-popup .tc-popup-in { top: 30px; margin-top: 0px; padding: 20px;  height: auto;  }
+.tc-popup .scrollable { height: 255px;  }
+.totalentry-box .total-entry {font-size: 68px; } 
+}	
+@media screen and (max-width: 599px) {
+.scrollable { height: 300px;  }	
+.winner-box .tabs li { font-size: 14px;  }
+.table-scrollbar { overflow-x: scroll; }	
+.winner-box table { max-width: 700px;  }	
+.practice-box .step { height: auto; width: 100%;  }
+.practice-box .step:before { display: none!important;  }
+.practice-box .three img { left: 33%;    width: 109px;  }
+.practice-box .three { padding-bottom: 110px;  }
+.practice-box .two img { left: 50%; margin-left: -50px; width: 82px;  }
+.practice-box .two { padding-bottom: 135px;  }
+.practice-box .two h3, .practice-box .three h3 { text-align: center;  }
+}	
+@media screen and (max-width: 479px) {
+.winner-box .tabs li { font-size: 12px;  }	
+.winner-box td, .winner-box th { font-size: 12px;  }	
+.tvc-box a { width: auto; height: auto;  }	
+h2 { font-size: 22px;  }
+.about-box .prizes { font-size: 16px;  }
+.about-box  img { width: 100px;  }
+.about-box .right:before { font-size: 18px;  left: -22%; }
+}	
+@media screen and (max-width: 400px) {
+.winner-box .tabs li:first-child { padding-left: 10px;  }
+.winner-box .tabs li { padding: 12px 4px 11px 14px; }
+}	
+@media screen and (max-width: 359px) {
+.winner-box .tabs li { font-size: 11px; padding: 12px 4px 11px 12px;  }
+.winner-box .tabs li:first-child { padding-left: 8px; }
+}	
+@media screen and (max-height: 450px) {
+.tc-popup .tc-popup-in { top: 30px; margin-top: 0px;  }
+.tc-popup .scrollable { height: 120px;  }
+}

@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html class="">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.02, user-scalable=no">
+   <link rel="icon" href="http://centerfresh.in/img/logo.png" type="image/x-icon">
+   <title>Center Fresh</title>
+   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
+      id="bootstrap-css">
+   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="./assets/css/style.css">
+
+   <link rel="stylesheet" href="./assets/css/responsive.css">
+   <link rel="stylesheet" type="text/css" href="./assets/css/jquery.custom-scrollbar.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <link rel="stylesheet" href="./assets/css/styles.css">
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <script src="./assets/js/jquery.custom-scrollbar.js"></script>
+   <style>
+      body {
+         font-family: 'Lato-Regular';
+         background-image: url("assets/images/Landing Page BG 2.png");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+
+      }
+
+      body .top-bar {
+         display: none !important;
+      }
+
+      a[href^=tel] {
+         color: inherit;
+         text-decoration: none;
+      }
+
+      h2 {
+         font-family: 'Lato-bold' !important;
+      }
+
+      .para-sec2 {
+         margin-top: 10px !important;
+      }
+
+      .practice-box h3 {
+         margin: 0px 0 0px 0px !important;
+      }
+
+      .step-one-content li {
+         font-family: 'HelveticaNeue-Medium';
+         font-size: 17px !important;
+
+      }
+
+      .sec2 {
+         background-color: #3496d5 !important;
+      }
+
+      .loader {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 9999;
+         background: #fff;
+         text-align: center;
+
+      }
+
+      .loader-img {
+         position: relative;
+         left: 50%;
+         top: 50%;
+         width: 400px;
+         height: 270px;
+         transform: translate(-50%, -50%);
+         -webkit-transform: translate(-50%, -50%);
+         -moz-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+      }
+
+
+      .step-one-content {
+         padding: 0 10px !important;
+         margin-bottom: 0 !important;
+      }
+
+      .img1 {
+         height: 80px;
+         width: 170px;
+         margin-right: 31% !important;
+      }
+
+      .img2 {
+         height: 80px;
+         width: 170px;
+         margin-top: -10% !important;
+         margin-left: 38% !important;
+      }
+
+      .imgsec4 {
+
+         margin: 10px 95px !important;
+         display: flex;
+         /* height: 31vh; */
+         object-fit: cover;
+
+      }
+
+      .img3 {
+         width: 70px;
+         height: 130px;
+         z-index: 3;
+         position: absolute !important;
+         right: 30px !important;
+         bottom: 30px !important;
+      }
+
+      .practice-box .number .num-sec {
+         font-family: 'HelveticaNeue-Medium';
+         font-size: 80px;
+         position: absolute;
+         left: 0px;
+         top: -30px;
+      }
+
+
+
+      .head-sub {
+         font-family: 'HelveticaNeue-Medium';
+         font-size: 30px;
+      }
+
+      .sec3 {
+
+         background-color: #244da3;
+      }
+
+      .scroll-bar vertical {
+         display: none !important;
+      }
+
+      a:hover,
+      a:focus {
+         color: #fff;
+         text-decoration: none;
+      }
+
+      /* Style the tab */
+      .tab {
+         overflow: hidden;
+         border: 1px solid #ccc;
+         background-color: #056ac2;
+      }
+
+      .practice-box h3 {
+         margin: 20px 0 60px 0px !important;
+      }
+
+      .social-icon li {
+         padding: 5px 10px;
+      }
+
+
+      /* Style the buttons inside the tab */
+      .tab button {
+         background-color: inherit;
+         float: left;
+         border: none;
+         outline: none;
+         cursor: pointer;
+         padding: 14px 16px;
+         transition: 0.3s;
+         font-size: 17px;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+         background-color: #fff;
+      }
+
+      .tab button:active {
+         background-color: #fff;
+      }
+
+
+      .ahover a:hover {
+         text-decoration: none;
+
+      }
+
+      /* Style the tab content */
+
+      .tabcontent {
+         border-top: none;
+
+      }
+
+      /*
+	.scrollable .viewport {
+		position: relative;
+		overflow-y: scroll;
+	}*/
+
+
+      @media only screen and (max-width: 600px) {
+         .para-sec2 {
+            margin-top: 10px !important;
+         }
+
+         .practice-box .number .num-sec {
+            font-size: 50px;
+
+         }
+
+         .num-sec-alter {
+            font-family: 'HelveticaNeue-Medium';
+            font-size: 80px;
+            position: absolute;
+            left: 0px;
+            top: -23px !important;
+         }
+
+         .img3 {
+            height: 120px;
+            position: initial !important;
+         }
+
+         .imgsec4 {
+            left: 30% !important;
+            width: 206px !important;
+            top: 33% !important;
+            top: 52%;
+            margin: 20px 50px !important;
+         }
+
+         .mac .practice-box .number span {
+            top: -15px !important;
+         }
+      }
+
+      .bnrimg-text {
+         position: relative;
+         left: 101px;
+         bottom: 27px;
+         right: 0;
+      }
+   </style>
+   <script>
+      $(document).ready(function () {
+
+         setTimeout(function () {
+
+            $(".loader").css("display", "block");
+            $(".loader").delay(3000).fadeOut(1000);
+         });
+         $(".body-hide").css("display", "none");
+         $(".body-hide").delay(500).fadeIn(500);
+      });
+
+   </script>
+</head>
+
+<body class="">
+   <div class="loader" id="loader-overlay" style="display: none;">
+      <div class="loader-img"><img src="./assets/images/loader-img.gif" alt="Loader..."></div>
+   </div>
+   <header class="">
+      <div class="wrapper">
+         <div class="logo">
+            <a href="http://centerfresh.in/">
+               <img src="./assets/images/clogo.png" alt="">
+            </a>
+         </div>
+         <div class="hamburger-icon"></div>
+         <menu>
+            <div class="hamburger-close"></div>
+            <ul class="hover-effect">
+               <li><a class="ahover" href="#how-to-participate" style="font-size:18px"> How to Participate</a></li>
+               <li><a class="tcpop ahover" href="javascript:void(0)" style="font-size:18px"> Terms &amp; Conditions </a>
+               </li>
+               <li><a class="ahover" href="#winner-list" style="font-size:18px">Winners' List </a></li>
+               <li><a target="_blank" class="ahover" href="FAQ.html" style="font-size:18px">FAQs</a></li>
+
+            </ul>
+         </menu>
+      </div>
+   </header>
+   <div class="banner-box">
+      <a href="http://centerfresh.in/"> <img class="dekstop" src="./assets/images/centerfreshNew.img.jpg"> </a>
+      <a href="http://centerfresh.in/"><img class="mobile" src="./assets/images/centerfreshNew.img.jpg"></a>
+   </div>
+   <!-- <div class="about-box common-pad" id="about">
+      <div class="wrapper">
+         <h2>Enjoy the sweet taste of victory!</h2>
+         <p>Your chance to win is just a candy away. Stock up on the sweetness<br>
+            of Alpenliebe Gold &amp; Creamfills to <span>win</span>
+         </p>
+         <div class="prizes">
+            <div class="left">
+               <div class="image"> <img src="./assets/images/cycle.png" alt="#"> </div>
+               1 Firefox <span class="big">Geared Bicycle</span> <span class="black">Every HOUR</span>
+            </div>
+            <div class="right">
+               <div class="image"><img src="./assets/images/amazon-card.png" alt="#"></div>
+               1 Amazon Pay <span class="big">Gift Card</span> worth <i>₹1000</i> <span class="black">Every 10
+                  Minutes</span>
+            </div>
+         </div>
+      </div>
+   </div> -->
+   <div class="practice-box common-pad" id="how-to-participate">
+      <div class="wrapper">
+         <h2>How to Participate?</h2>
+         <!-- <p> Brace yourselves for a sweet victory, as Alpenliebe Gold &amp; Creamfills help you bring home exciting
+            prizes.<br>
+            <span>Get ready to try them all!</span>
+         </p> -->
+         <div class="practice-steps">
+            <div class="step one">
+               <div class="number"><span class="num-sec">1</span>
+                  <p class="head-sub " style="font-family: 'Lato-bold'">Buy</p>
+               </div>
+               <div style="clear:both;"> </div>
+               <div class="para-sec1">
+                  <ul class="step-one-content">
+                     <li style="font-family: 'Lato-Regular'">
+                        Buy Center Fresh 3 Layer Gum, Xtra or Mints and find a valid batch code on the pack
+                     </li>
+                  </ul>
+
+               </div>
+               <div style="text-align: center;">
+                  <img src="././assets/images/centerfresh.img.png" alt="#" style="max-height: 17vh;">
+
+                  <!-- <img class="img2" src="./assets/images/mmint2.png" alt="#">		 -->
+               </div>
+            </div>
+            <!-- class="para-sec2" -->
+            <!-- class="img1" -->
+
+
+            <div class="step sec2">
+               <div class="number"><span class="num-sec">2</span>
+                  <p class="head-sub " style="font-family: 'Lato-bold'">SEND</p>
+               </div>
+               <div style="clear:both;"> </div>
+               <div class="para-sec1">
+                  <ul class="step-one-content">
+                     <li style="font-family: 'Lato-Regular'">
+                        SMS Batch CODE to 7026655555
+                        <span></span>
+                     </li>
+                  </ul>
+                  <br>
+               </div>
+               <div style="text-align:center;">
+                  <img src="./assets/images/sms.png" style="margin-top:7% ;">
+               </div>
+
+               <!-- class="img3 pull-right" -->
+            </div>
+            <div class="step sec3">
+               <div class="number"><span class="num-sec">3</span>
+                  <p class="head-sub " style="font-family: 'Lato-bold'">WIN</p>
+               </div>
+               <div style="clear:both;"> </div>
+
+               <div class="para-sec1" style="">
+                  <ul class="step-one-content">
+                     <li style="font-family: 'Lato-Regular'">
+                        Stand a chance to Win a Zomato gift voucher worth Rs. 150 every minute !
+                     </li>
+                  </ul>
+               </div>
+
+               <div style="text-align: -webkit-center;">
+                  <img class="imgsec4" src="./assets/images/enterfresh.card.img.png"
+                     style="max-height:28vh;width: 35%;">
+                  <p style="color:white;font-size: 72%; " class="bnrimg-text">
+                     ^T&C apply.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+
+   <!--  <div class="terms-box common-pad" id="terms-and-conditions">
+      <div class="wrapper"> <a class="t-and-c tcpop" href="javascript:void(0)"> Terms &amp; Conditions </a> </div>
+   </div> 
+   <div class="totalentry-box common-pad">
+      <div class="wrapper">
+         <h2 style="color:white;">Entries so far</h2>
+         <div class="total-entry"><span id="total_entries"></span>
+         </div>
+      </div>
+   </div> -->
+   <div class="winner-box common-pad" id="winner-list">
+      <div class="wrapper">
+         <h2>Winners' List</h2>
+         <p>Congratulations and thank you for participating!</p>
+
+         <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'smartph')">
+               Zomato Rs. 150 Voucher Winner List – Rest of India</button>
+            <button class="tablinks active" onclick="openCity(event, 'mobilerc')" id="defaultOpen">
+               Zomato Rs. 150 Voucher Winner List – Tamil Nadu</button>
+         </div>
+         <!-- <div class="tabs">
+               <ul>
+                  <li data-index="cycle-div" class="active ">Mobile Recharge <span>Winners</span></li>
+                  <li data-index="voucer-div">Smartphone <span>Winners</span></li>
+               </ul>
+            </div>  -->
+         <div class="winner-table">
+            <div class="cycle-div open tabcontent " id="mobilerc" style="display: block;">
+               <div class="gray-skin" tabindex="-1">
+                  <!-- <p style="color:#FFF;">Date : <input type="text" id="datepicker">
+							<input class="submit" type="submit"  value="SUBMIT" onclick="loadwinners()">
+						</p> -->
+                  <div class="scroll-bar vertical" style="height: 500px; display: none;">
+                     <div class="thumb" style="top: 0px; height: 83.9208px;"></div>
+                  </div>
+                  <div class="viewport" style="">
+                     <div class="overview" style="top: 0px; left: 0px;">
+                        <div class="table-scrollbar " style="min-height:600px;">
+                           <div class="col-12 col-sm-12 col-lg-12" style="padding: 0px;">
+                              <div class="row" style="">
+                                 <div class="col-12 col-sm-12 col-lg-12" style="padding: 10px;height: 90vh;">
+
+
+
+                                    <iframe id="" frameborder="0" marginheight="0" marginwidth="0"
+                                       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSL4y-WFdf__eq9kL7ir4yEkaXE7sJuGlDGyD9S_9NFz4j2W8WyZTTMLksl1qY-KKjq0ECyG3qgt1NU/pubhtml?widget=false&headers=false&chrome=0"
+                                       style="display: block;width: 100%;height: 100%;margin: auto;max-width: 800px;">
+                                    </iframe>
+
+                                    <!-- <iframe id="" frameborder="0" marginheight="0" marginwidth="0"
+                                     src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTpuQh2GpozQ-RnIGJ_1UoYmdiB9Wrln29rGm16NIQyHkSZC3vBi7p7zGXMNjuezVU2x-zM_sVOCSxx/pubhtml?widget=false&headers=false&chrome=0"
+                                     style="display: block;width: 100%;height: 100%;margin: auto;max-width: 750px;" >
+                                       
+                                    </iframe> -->
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="scroll-bar horizontal" style="width: 929px;display: none;">
+                        <div class="thumb" style="left: 0px; width: 929px;"></div>
+                     </div>
+                     <!-- <div class="scroll-bar vertical" style="width: 929px; display: none;">
+							<div class="thumb" style="left: 0px; width: 929px;"></div>
+						 </div> -->
+                  </div>
+               </div>
+            </div>
+
+            <div class="voucer-div open tabcontent " id="smartph" style="display: none;">
+               <div class="gray-skin" tabindex="-1">
+                  <!-- <p style="color:#FFF;">Date : <input type="text" id="datepicker">
+                  <input class="submit" type="submit"  value="SUBMIT" onclick="loadwinners()">
+               </p> -->
+                  <div class="scroll-bar vertical" style="height: 500px; display: none;">
+                     <div class="thumb" style="top: 0px; height: 83.9208px;"></div>
+                  </div>
+
+                  <div class="viewport" style="">
+                     <div class="overview" style="top: 0px; left: 0px;">
+                        <div class="table-scrollbar " style="min-height:600px;">
+                           <div class="col-12 col-sm-12 col-lg-12" style="padding: 0px;">
+                              <div class="row" style="">
+                                 <div class="col-12 col-sm-12 col-lg-12" style="padding: 10px;height: 90vh;">
+
+
+                                    <iframe id="" frameborder="0" marginheight="0" marginwidth="0"
+                                       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTJYpYkbEgOQIG1BX7FknQqI3srtW-oBSqKJnIl12-0kGH72GAnjeooSfcWzPdsjvtKAu6iB1lEm_6L/pubhtml?widget=false&headers=false&chrome=0"
+                                       style="display: block;width: 100%;height: 100%;margin: auto;max-width: 800px;">
+                                    </iframe>
+
+                                    <!-- <iframe
+                                       id="" frameborder="0" marginheight="0" marginwidth="0"
+                                       src="https://docs.google.com/spreadsheets/d/11kmvJT41_H35wqUn5GcUP_Zg4WxTd38D_fYXIxyVZhU/htmlembed/sheet?headers=false&amp;gid=0&amp;pli=1"
+                                       style="display: block;width: 100%;height: 100%;margin: auto;max-width: 880px;">
+                                    </iframe> -->
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="scroll-bar horizontal" style="width: 929px;display: none;">
+                        <div class="thumb" style="left: 0px; width: 929px;"></div>
+                     </div>
+                     <!-- <div class="scroll-bar vertical" style="width: 929px; display: none;">
+							<div class="thumb" style="left: 0px; width: 929px;"></div>
+						 </div> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+   <footer>
+      <ul class="social-icon">
+         <li><a target="_blank" href="https://www.facebook.com/Centerfreshindia"><img
+                  src="./assets/images/facebook1.png" style="width:35px;height:35px;"></a></li>
+         <li><a target="_blank" href="https://twitter.com/CenterfreshIn"><img src="./assets/images/twitter1.png" alt=""
+                  style="width:35px;height:35px;"></a></li>
+         <li><a target="_blank" href="https://www.instagram.com/Centerfresh_india"><img src="./assets/images/Insta1.png"
+                  alt="" style="width:35px;height:35px;"></a></li>
+      </ul>
+   </footer>
+
+
+
+
+   <div class="tc-popup">
+      <div class="tc-popup-in">
+         <div class="close"></div>
+
+         <h4 style="text-align: center;">
+            <span>General Terms and Conditions </span>
+         </h4>
+
+         <div class="container" style="height: 100%;">
+            <div class="row" style=" display: block;">
+               <h5>
+                  <span>Terms &amp; Conditions: </span>
+               </h5>
+               <div class="col-md-12" style="text-align: center;">
+
+                  <div class="col-md-12" style="font-size: small;padding-bottom:10px;">
+
+                     <div class="col-md-12"
+                        style="word-wrap: break-word;padding-bottom:10px;text-align: justify;overflow: scroll;height: 35rem;">
+
+                        <ol type="1">
+                           <li>
+                              <div>
+                                 <h5>
+                                    <b>1. Organizing and Managing of Contest: </b>
+                                 </h5>
+                                 <div>
+                                    <ol type="i">
+                                       <li>
+                                          <p>
+                                             i. This Contest is being organized by Perfetti Van Melle India Private
+                                             Limited, with registered office at 47th Milestone Delhi : Jaipur
+                                             Highway, Manesar 122050, Gurgaon (Haryana) and corporate office at 1st
+                                             Floor, Tower A, Global Business Park, MG Road, Gurgaon : 122002
+                                             (Haryana) (“Organizer”) and is being managed Premier Sales Promotions
+                                             Private Limited, having its registered office at Mitra Towers, 4th
+                                             Floor, Kasturba Road, Bangalore 560 001 (“Agency”)
+                                          </p>
+                                       </li>
+                                    </ol>
+                                 </div>
+                              </div>
+                           </li>
+
+                           <li>
+                              <h5>
+                                 <b> 2. Contest Period:</b>
+                              </h5>
+                              <div>
+                                 <ol type="i">
+                                    <li>
+                                       <p>
+                                          i. This Contest begins on 7th October 2022 at 9:00 a.m. and ends on 5th
+                                          December 2022 at 9:00 p.m. (“Contest Period”).
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          ii. To be eligible for the Contest entries must be received within the
+                                          Contest
+                                          Entry Period.
+                                       </p>
+                                    </li>
+                                 </ol>
+                              </div>
+                           </li>
+
+                           <li>
+                              <h5>
+                                 <b>3. Products:</b>
+                              </h5>
+                              <div>
+                                 <ol type="i">
+                                    <li>
+                                       <p>
+                                          i. The products that enter this Contest are Center fresh Mints, Center
+                                          fresh 3
+                                          Layer Gum and Center fresh Xtra
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          ii. Products without the offer will also be available in the market.
+                                       </p>
+
+                                    </li>
+                                    <li>
+                                       <p>
+                                          iii. Further, certain stock of the promotional Product containing the Offer
+                                          may
+                                          continue to be available before or after the Contest Period, however,
+                                          participants understand and agree that they will not be permitted to
+                                          participate in the contest prior to and/or after the expiration of the
+                                          Contest Period and further agree not to raise any claim or complaint
+                                          against PVMI and/or the Agency.
+                                       </p>
+                                    </li>
+                                 </ol>
+                              </div>
+                           </li>
+
+                           <li>
+                              <div>
+                                 <h5>
+                                    <b>4. Eligibility of Participants:</b>
+                                 </h5>
+                              </div>
+                              <div>
+                                 <ol type="i">
+                                    <li>
+                                       <p>
+                                          i. The Contest is open only to those who purchase any of the promotional
+                                          pack
+                                          and who are 18 years and above and who submit their entry during the
+                                          Contest Period.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          ii. Participants below 18 years shall be allowed to participate with their
+                                          parents or guardians providing the necessary documentation on behalf of the
+                                          minor. In such a case, the parent (s) or legal guardian of the minor may
+                                          redeem the prize at his/her own cost and shall execute the documents as
+                                          required and shall be party to these terms and conditions.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+
+                                          iii. Organizer reserves the right to exclude any person from the contest on
+                                          grounds of misconduct or criminal record.
+
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          iv. Organizer acknowledges that this Contest is in no way sponsored,
+                                          endorsed,
+                                          or administered by, or associated with Instagram/Facebook/YouTube and
+                                          releases Instagram/ Facebook /YouTube of any and all liability in relation
+                                          to this Contest.
+
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+
+                                          v. Any information provided by the Participant under this Contest is
+                                          provided
+                                          to the Organizer/Agency and not to Instagram/Facebook/YouTube. In accepting
+                                          these terms and conditions Participants release Instagram/Facebook/You Tube
+                                          from any liability to the fullest extent possible in law.
+
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          vi. Organizer's employees, or employees of its affiliates, suppliers,
+                                          partners,
+                                          advertising and Agency (collectively the “Employees”), as well as members
+                                          of an Employees' immediate family and/or those living in the same household
+                                          of Employees are ineligible to participate in the Contest.
+                                       </p>
+                                    </li>
+                                 </ol>
+                              </div>
+                           </li>
+
+                           <li>
+                              <p>
+                                 <b> 5. Territory: </b>This Contest is valid pan India including the state of Tamil
+                                 Nadu.
+                              </p>
+                           </li>
+                           <li>
+                              <p>
+                                 <b> 6. Point of Sale </b> : This Contest is valid in all points of sale located in
+                                 the
+                                 Territory where the Products in Contest are available and until end of stock.
+                              </p>
+                           </li>
+
+                           <li>
+                              <h5>
+                                 <b>7. Agreement to Terms and Conditions/Rules:</b>
+                              </h5>
+                              <div>
+                                 <ol type="i">
+                                    <li>
+                                       <p>
+                                          i. By entering this Contest the Participant accepts and agrees to abide by
+                                          this Terms and Conditions and Organizer’s decisions/Agency’s, which are
+                                          fully and unconditionally binding in all respects.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          ii. The Organizer/Agency reserves the right to refuse, withdraw, or
+                                          disqualify
+                                          any entry at any time at the Organizer’s/Agency’s sole discretion.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          iii. By entering this Contest, the Participant represents and warrants to
+                                          be
+                                          eligible to participate based on eligibility requirements explained in
+                                          these rules.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          iv. The Participant also agrees to accept the decisions of the
+                                          Organizer/Agency
+                                          as final and binding as it relates to the content of this Contest.
+                                       </p>
+                                    </li>
+                                 </ol>
+                              </div>
+                           </li>
+
+                           <li>
+                              <h5>
+                                 <b>8. How to enter:</b>
+                              </h5>
+
+                              <div>
+                                 <p>
+                                    <b>
+                                       Step:1
+                                    </b>
+                                 </p>
+                                 <p>
+                                    Eligible Participant after purchasing the promotional Product, may participate by
+                                    sending an SMS during the Contest Period with a valid Batch Code printed on the
+                                    Product from his/her GSM/CDMA mobile phone.
+                                 </p>
+                                 <p>
+                                    Entries received outside the Contest Period will not be considered for winner
+                                    selection.
+                                 </p>
+
+                                 <p>
+                                    <b> Step:2</b>
+                                 </p>
+                                 <p>
+                                    For Rest of India:
+                                 </p>
+                                 <p>
+                                    After sending the SMS, the Participant will get a participation confirmatory SMS
+                                    with
+                                    respect to his Participation to the Contest.
+                                 </p>
+                                 <p>
+                                    For Tamil Nadu:
+                                 </p>
+                                 <p>
+                                    After sending the SMS, participant will get SMS with a question. The participant
+                                    will have to send their answer by sending SMS in the below format to 7026655555.
+                                 </p>
+                                 <p>
+                                    SMS CFTN Your Answer to 7026655555
+                                 </p>
+                                 <p>
+                                    After sending the Answer SMS, Participant will get participation confirmatory SMS
+                                    with respect to the Contest.
+                                 </p>
+                                 <p>
+                                    As a Participant, the entry must fully meet all Contest requirements, as
+                                    specified in this terms and conditions, in order to be eligible to win a prize.
+                                    Incomplete entries or those that do not adhere to these rules will be
+                                    disqualified at the Organizer's sole discretion. You may enter only once, and you
+                                    must fill in the information requested. Participants may not enter more times
+                                    than indicated by using multiple email addresses, identities, or devices in an
+                                    attempt to circumvent the rules. If Participants use fraudulent methods or
+                                    otherwise attempt to circumvent the rules Participants’ submission may be removed
+                                    from eligibility at the sole discretion of the Organizer.
+                                 </p>
+
+                                 <div>
+                                    <p>
+                                       Organizer/Agency shall not be responsible for (including but not limited to):
+                                    </p>
+                                    <ol type="i">
+                                       <li>
+                                          <p>
+                                             i. For any SPAM generated messages
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             ii. For the Operator Code not being displayed on the user's mobile
+                                             phones
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             iii. For any SMS message delivery failures
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             iv. Any lost, late or misdirected computer transmission or network,
+                                             electronic failures or any kind of any failure to receive entries owing
+                                             to transmission failures or due to any technical reason
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             v. If the participant has registered himself to the DND of the telecom
+                                             provider/ the participant has registered with National Do Not Call
+                                             Registry/ Participant has specifically requested for not receiving
+                                             messages for the specific Contest.
+
+                                          </p>
+                                       </li>
+                                       <p>
+                                          Other conditions beyond the reasonable control of the Organizer/Agency.
+                                       </p>
+
+                                    </ol>
+                                 </div>
+                              </div>
+                           </li>
+
+
+                           <li>
+                              <h5>
+                                 <b>9. Contest Mechanism:</b>
+                              </h5>
+                              <div>
+                                 <p>
+                                    <b>Step 1: </b>
+                                 </p>
+                                 <p>
+                                    Eligible Participant after purchasing the promotional Product, may participate by
+                                    sending an SMS during the Contest Period with a valid Batch Code printed on the
+                                    Product from his/her GSM/CDMA mobile phone.
+                                 </p>
+                                 <p>
+                                    Entries received outside the Contest Period will not be considered for winner
+                                    selection.
+                                 </p>
+                                 <p>
+                                    <b>
+                                       Step 2:
+                                    </b>
+                                 </p>
+                                 <p>
+                                    For Rest of India:
+
+                                    After sending the SMS, the Participant will get a participation confirmatory SMS
+                                    with respect to his Participation to the Contest.
+                                 </p>
+                                 <p>
+                                    For Tamil Nadu:
+
+                                    After sending the SMS, participant will get SMS with a question. The participant
+                                    will have to send their answer by sending SMS in the below format to 7026655555.
+                                 </p>
+                                 <p>
+                                    SMS CFTN Your Answer to 7026655555
+                                 </p>
+                                 <p>
+                                    After sending the Answer SMS, Participant will get participation confirmatory SMS
+                                    with respect to the Contest.
+                                 </p>
+
+                                 <p>
+                                    <b>
+                                       Step:3
+                                    </b>
+                                 </p>
+                                 <p>
+                                    Selection of Winners
+                                 </p>
+                                 <p>
+                                    <b>
+                                       For Rest of India:
+                                    </b>
+                                 </p>
+                                 <p>
+                                    From the valid entries received one winner will be chosen every Minute during the
+                                    Contest Period i.e. 720 unique winners will be declared per day during the
+                                    Contest Period (irrespective of their time of participation during Contest
+                                    Period). Therefore, there will be 43200 unique winners selected for the prize
+                                    during the Contest Period of 60 days.
+                                 </p>
+                                 <p>
+                                    The winners will be eligible for Prize (defined below). Winning Entries from
+                                    amongst Participants who participated during the Contest Period shall be
+                                    determined by Computerized Random Time Software.
+                                 </p>
+                              </div>
+
+                              <div>
+                                 <h5>
+                                    For Tamil Nadu:
+                                 </h5>
+                                 <div>
+                                    <ol type="i">
+                                       <li>
+                                          <p>
+                                             i. From the valid Entries received 50 winners will be chosen daily
+                                             during
+                                             the Contest Period (therefore there will be total 3000 winners from
+                                             Tamil Nadu during the Contest Period of 60 days).
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             ii. From the Valid Entries received, the first response describing their
+                                             love for Centerfresh will be considered for evaluation.
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             iii. Each valid entry eligible for evaluation will be evaluated on the
+                                             creativity of the response received by the Organizer/Agency via internal
+                                             randomizer. The decision of the Organizer/Judges will be final and
+                                             binding on all the Participant
+                                          </p>
+                                       </li>
+                                    </ol>
+                                 </div>
+                              </div>
+                           </li>
+
+                           <li>
+                              <div>
+                                 <h5>
+                                    <b>10 Prize:</b>
+                                 </h5>
+                                 <div>
+                                    <ol>
+                                       <li>
+                                          <p>
+                                             i. The winner(s) of the Contest (“Winner(s)”) will receive Rs. 150
+                                             Zomato
+                                             Voucher (subject to terms and conditions of Zomato)
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             ii. The actual/appraised prize value may differ at the time the prize is
+                                             awarded. The prize(s) shall be determined solely by the Organizer.
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             iii. There shall be no cash or other prize substitution permitted except
+                                             at
+                                             the Organizer’s discretion.
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             iv. The prize is non-transferable.
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             v. The Winner, upon acceptance of the prize, is solely responsible for
+                                             all
+                                             expenses related to the prize, including without limitation any and all
+                                             applicable taxes.
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             vi. The Winner shall not assign of the prize to others, nor shall the
+                                             Winner
+                                             request the cash equivalent or prize substitution.
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             vii. The usage of this Prize is incumbent upon the terms & conditions to
+                                             be
+                                             followed by the winner.
+                                          </p>
+                                       </li>
+                                    </ol>
+                                 </div>
+                              </div>
+                           </li>
+
+                           <li>
+                              <div>
+                                 <h5>
+                                    <b> 11. Winner Selection:</b>
+                                 </h5>
+                                 <div>
+                                    <ol type="i">
+                                       <li>
+                                          <p>
+                                             i. One participant can win a maximum of 1 Prize during the promotion
+                                             period
+                                             irrespective of the entries made by him.
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             ii. For Rest of India: Uniqueness of the winner will be basis Unique
+                                             Mobile
+                                             No + Batch Code. Winning Entries from amongst Participants who
+                                             participated during the Contest Period shall be determined by
+                                             Computerized Random Time Software.
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             iii. For Tamil Nadu: Uniqueness of the winner will be basis Unique
+                                             Mobile No
+                                             +Batch Code + Uniqueness of the Answer
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             iv. From the Valid Entries received, the first response describing their
+                                             love for Centerfresh will be considered for evaluation.
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             v. Each valid entry eligible for evaluation will be evaluated on the
+                                             creativity of the response received by the Organizer/Agency.
+                                          </p>
+                                       </li>
+                                       <li>
+                                          <p>
+                                             vi. The decision of the Organizer/Judges will be final and binding on
+                                             all
+                                             the Participants.
+                                          </p>
+                                       </li>
+                                    </ol>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <h5>
+                                 <b>12. Winner’s Notification:</b>
+                              </h5>
+                              <div>
+                                 <ol type="i">
+                                    <li>
+                                       <p>
+                                          i. The Organizer will notify the winner(s) by SMS on their winning mobile
+                                          number within 2 business days.
+                                    </li>
+                                    <li>
+                                       <p>
+                                          ii. The winners will receive their reward code and a weblink to claim their
+                                          prize.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          iii. The Organizer/Agency is not responsible for nor shall have no
+                                          liability for
+                                          Winner’s failure to receive notices due to SMS/email security settings that
+                                          may cause notifications to be marked as spam email.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          iv. Nor shall be Organizer/Agency liable for the winner’s provision of
+                                          incorrect or otherwise non-functioning contact information.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          v. If the winner 1) fails to claim the prize within 30 days from the time
+                                          the
+                                          award notification was sent, 2) is found ineligible, or 3) does not
+                                          complete and return an executed declaration and release within the
+                                          specified timeframe, the prize may be forfeited and a substitute winner may
+                                          be selected.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          vi Receipt of the prize by the winner is upon the condition of compliance
+                                          with
+                                          this terms and conditions and any and all applicable laws and regulations.
+                                       </p>
+                                    </li>
+                                 </ol>
+                              </div>
+                           </li>
+                           <li>
+                              <h5>
+                                 <b>13. Delivery of the prizes:</b>
+                              </h5>
+                              <div>
+                                 <ol type="i">
+                                    <li>
+                                       <p>
+                                          i. Prizes will be delivered by the Organizer (directly or through the
+                                          agency
+                                          or expedition company appointed by the Organizer for that purpose), through
+                                          mobile number/email id of the winners according to the information provided
+                                          by the Participant to the Organizer/Agency following these terms and
+                                          conditions.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          ii. Please be noted to provide the complete mobile number / email id to
+                                          avoid
+                                          any error in delivery.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          iii. The Organizer will not be responsible for any error in the delivery if
+                                          it
+                                          is due to the winners’ mistake.
+                                       </p>
+                                    </li>
+                                 </ol>
+                              </div>
+                           </li>
+
+                           <li>
+                              <h5>
+                                 <b>14. Use of Information:</b>
+                              </h5>
+                              <div>
+                                 <ol type="i">
+                                    <li>
+                                       <p>
+                                          i. The Participant expressly authorizes the Organizer/Agency to reproduce
+                                          and
+                                          use all material/data submitted in connection with the Contest (whether
+                                          written, audio, electronic or visual from, or a combination of those) or
+                                          any photograph, video, and/or film footage and/or audio recording taken of
+                                          Participant are for editorial, marketing, promotion and other purposes
+                                          related to the Contest in any medium, including the Internet and social
+                                          media channels, without such activities granting the Participant (or any
+                                          other persons appearing in the photo(s) right to compensation or any
+                                          benefit unless prohibited by law.
+                                       </p>
+                                    </li>
+                                 </ol>
+                              </div>
+                           </li>
+
+                           <li>
+                              <h5>
+                                 <b>15. Personal Data Protection:</b>
+                              </h5>
+                              <div>
+                                 <ol type="i">
+                                    <li>
+                                       <p>
+                                          i. In compliance with the applicable personal data protection laws, the
+                                          Organizer informs the Participants that the personal data provided to
+                                          participate in the Contest will be collected and processed under the
+                                          control of the Organizer solely for the purpose of operating this Contest
+                                          including the management of the Participant’s participation and, in its
+                                          case, the delivery of the Prize and the publication of the Participant’s
+                                          data as winner of a prize as indicated in this Terms and Conditions.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          ii. Consequently, the processing of the Participant’s personal data is
+                                          based on
+                                          the Participant’s will to participate in the Contest.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          iii. The personal data processed will be kept as long as the Contest is in
+                                          force
+                                          and after only for the publication purposes referred and/or as long as it
+                                          is necessary to comply with any legal regulation that may impose the
+                                          Organizer the obligation to keep the data for a longer period of time.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          iv. The Organizer informs the Participant, that accepts, that it may
+                                          outsource
+                                          to third parties part of the services related to the management of the
+                                          Contest with the purpose to obtaining logistic and/or administrative
+                                          support (for instance, companies that carry out the service of delivering
+                                          the prizes, or companies rendering technological services like hosting of
+                                          the Organizer’s Website or social media channels).
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          v. All these companies are acting as processors or authorized recipients
+                                          and
+                                          can have access to and/or process the Participant’s personal data only as
+                                          far as it is necessary to comply with the purposes of this Contest.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          vi. The Organizer informs the Participant that he/she has right to request
+                                          access to and rectification or erasure of his/her personal data, or
+                                          restriction or objection to processing, as well as the right to data
+                                          portability or to withdraw the consent given by addressing to the Organizer
+                                          a written communication to Perfetti Van Melle India Private Limited at its
+                                          registered office address or by sending an email to the attention of
+                                          indconsumercare@perfettivanmelle.com always providing a copy of the
+                                          identification document or any other document proving it.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          vii Organizer reserves the right to verify the truthfulness of the personal
+                                          data provided by the Participant at any time.
+                                       </p>
+                                    </li>
+                                    <li>
+                                       <p>
+                                          Organizer's decision on the winner cannot be contested.
+                                       </p>
+                                    </li>
+                                 </ol>
+                              </div>
+                           </li>
+
+                           <li>
+                              <h5>
+                                 <b>16. Questions:</b>
+                              </h5>
+                              <div>
+                                 <ol type="i">
+                                    <li>
+                                       <p>
+                                          i. To clarify any doubts, entrants can send an e-mail to: <a
+                                             href="centerfreshfeedback@bigcity.in">centerfreshfeedback@bigcity.in</a>
+                                       </p>
+                                    </li>
+                                 </ol>
+                              </div>
+                           </li>
+                           <li>
+                              <h5>
+                                 <b> 17. Contest advertising:</b>
+                              </h5>
+                              <ol type="i">
+                                 <li>
+                                    <p>
+                                       i. The advertising of this Contest will be made on packaging and/or in other
+                                       supports that the Organizer deems appropriate.
+                                    </p>
+                                 </li>
+                              </ol>
+                           </li>
+
+                           <li>
+                              <p>
+                                 18 Use of an automated system to participate is prohibited and will result in
+                                 disqualification. The Organizer has the right, at its absolute discretion, to
+                                 disqualify the winner if the Participant's acts to participate or information
+                                 provided does not comply with the rules and regulations of the competition.
+                              </p>
+                           </li>
+                           <li>
+                              <p>
+                                 19. The Organizer shall have the right, where necessary, to undertake all such
+                                 action as
+                                 is reasonable to protect itself against fraudulent or invalid claims and entries
+                                 including, without limitation, to require further verification as to the identity,
+                                 age and other relevant details of a Participant and before accepting a claim or
+                                 entry as being valid.
+                              </p>
+                           </li>
+                           <li>
+                              <p>
+                                 20.The Organizer reserves the rights to vary these Terms and Conditions or cancel
+                                 the Contest at any stage in the event of circumstances arising beyond its control.
+                                 Any change shall be advertised in the same way this Contest has been advertised
+                              </p>
+                           </li>
+                           <li>
+                              <p>
+                                 21. In its sole discretion, the Organizer reserves the right to modify, suspend,
+                                 cancel,
+                                 or terminate the Contest should non-authorized human intervention, a bug or virus,
+                                 fraud, or other causes beyond the Organizer’s control, impact or corrupt the
+                                 security, fairness, proper conduct, or administration of Contest.
+                              </p>
+                           </li>
+                           <li>
+                              <p>
+                                 22. Individuals who tamper with or attempt to tamper with the operation or entry
+                                 process of the Contest or website or violates these Terms & Conditions will be
+                                 disqualified by the Organizer in its sole discretion. In its sole discretion, the
+                                 Organizer has the right to maintain the integrity of the Contest, to void votes for
+                                 any reason, including, but not limited to the use of bots, macros, scripts, or other
+                                 technical means for entering, found having content not appropriate for social media,
+                                 etc Attempts by any entrant to deliberately damage any website or undermine the
+                                 legitimate operation of the Contest may be a violation of criminal and civil laws.
+                              </p>
+                           </li>
+                           <li>
+                              <p>
+                                 23. If any such attempt is made, the Organizer reserves the right to seek damages to
+                                 the fullest extent permitted by law.
+                              </p>
+                           </li>
+
+                           <li>
+                              <h5>
+                                 <b>24 Limitation of Liability:</b>
+                              </h5>
+                              <ol type="i">
+                                 <li>
+                                    <p>
+                                       Entry into this Contest constitutes Participant’s agreement to release and
+                                       hold harmless the Organizer and its subsidiaries, representatives, affiliates,
+                                       partners, advertising and promotion agencies, successors, agents, assigns,
+                                       directors, employees, and officers against and from any and all claims,
+                                       liability, illness, injury, death, litigation, loss, or damages that may
+                                       occur, directly or indirectly from participation in the Contest and/or the 1)
+                                       Winner accepting, possessing, using, or misusing of any awarded prize or any
+                                       portion thereof; 2) any type of technical failure; 3) the unavailability or
+                                       inaccessibility of any transmissions, phone, or Internet service; 4)
+                                       unauthorized intervention in any part of the entry process or the Promotion;
+                                       5) electronic error or human error in the Promotion administration or the
+                                       processing of entries.
+                                    </p>
+                                 </li>
+                              </ol>
+                           </li>
+
+                           <li>
+                              <h5>
+                                 <b> 25. Other conditions and considerations:</b>
+                              </h5>
+                              <ol type="i">
+                                 <li>
+                                    <p>
+                                       i. 1.Entries will be considered by the order in which they were submitted and
+                                       their validation.
+                                    </p>
+                                 </li>
+                                 <li>
+                                    <p>
+                                       ii. 2.Organizer will not be responsible for any problem that occurs with the
+                                       Internet connection used to send entries.
+                                    </p>
+                                 </li>
+                                 <li>
+                                    <p>
+                                       iii. 3.Organizer will not be responsible for any stock breakage in the
+                                       affiliated
+                                       points of sale.
+                                    </p>
+                                 </li>
+
+                              </ol>
+                           </li>
+
+                           <li>
+                              <h5>
+                                 <b>26. Governing Law:</b>
+                              </h5>
+                              <ol type="i">
+                                 <li>
+                                    <p>
+                                       i. This Contest is governed by laws of India and the courts located at Gurgaon
+                                       shall have exclusive jurisdiction.
+                                    </p>
+                                 </li>
+                              </ol>
+
+                           </li>
+                           <li>
+                              <h5>
+                                 <b> 27 .Terms and conditions for redemption of prize:</b>
+                              </h5>
+
+                              <ol type="i">
+                                 <li>
+                                    <p>
+                                       i. The said Rs. 150/- Zomato Voucher shall be valid for redemption for a
+                                       period
+                                       of three months from the receipt of the Voucher.
+                                    </p>
+                                 </li>
+                                 <li>
+                                    <p>
+                                       ii.This Contest entitles the end user Rs. 150 off on the Food Partner App
+                                       (Zomato) in India only.
+                                    </p>
+                                 </li>
+                                 <li>
+                                    <p>
+                                       iii.This offer is available only on online payment option and not available on
+                                       COD.
+                                    </p>
+                                 </li>
+                                 <li>
+                                    <p>
+                                       iv. The discount of Rs. 150/- is valid on sub total amount (i.e. only on the
+                                       Food
+                                       Value Amount), which excludes delivery (+packaging), restaurant charges and
+                                       GST charges.
+                                    </p>
+                                 </li>
+                                 <li>
+                                    <p>
+                                       v. Offer valid for all days of the week.
+                                    </p>
+                                 </li>
+                                 <li>
+                                    <p>
+                                       vi. Any Order that customers place on the App is subject to product
+                                       availability,
+                                       Delivery capacity and acceptance by Partner and participating restaurant.
+                                    </p>
+                                 </li>
+                                 <li>
+                                    <p>
+                                       vii. Discount is offered on minimum purchase and maximum of 1 transaction only
+                                       on
+                                       one promo Code. The balance cost (after discount) of the order will be charged
+                                       to the credit/ debit card of the end user.
+                                    </p>
+                                 </li>
+                                 <li>
+                                    <p>
+                                       viii. A maximum of 1 code can be used per transaction.
+                                    </p>
+                                 </li>
+                                 <li>
+                                    <p>
+                                       ix.If the value of the Order is less than the value of the voucher, the
+                                       balance
+                                       is non-refundable and cannot be carried forward or used in any other
+                                       transaction.
+                                    </p>
+                                 </li>
+                                 <li>
+                                    <p>
+                                       x. This offer is only for Home Delivery.
+                                    </p>
+                                 </li>
+                                 <li>
+                                    <p>
+                                       xi. This offer is subject to promotional availability.
+                                    </p>
+                                 </li>
+                              </ol>
+                           </li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <script src="./assets/js/index.js"></script>
+         <script>
+            function openCity(evt, cityName) {
+               var i, tabcontent, tablinks;
+               tabcontent = document.getElementsByClassName("tabcontent");
+               for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+               }
+               tablinks = document.getElementsByClassName("tablinks");
+               for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+               }
+               document.getElementById(cityName).style.display = "block";
+               evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+         </script>
+      </div>
+   </div>
+
+
+</body>
+
+</html>
